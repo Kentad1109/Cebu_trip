@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cebu Escape Booklet</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-top"></div>
+    <div class="ambient ambient-bottom"></div>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Travel Booklet</p>
+        <h1>CEBU<br />Escape Plan</h1>
+        <p class="hero-lead">
+          セブ島で過ごす4日間を、移動・観光・冒険・ごほうび時間まで一冊にまとめた旅のしおり。
+        </p>
+
+        <div class="hero-actions">
+          <a href="#flights" class="button button-secondary">フライトを見る</a>
+          <a href="#visuals" class="button button-secondary">雰囲気を見る</a>
+          <a href="#itinerary" class="button button-primary">旅程を見る</a>
+          <a href="#guide" class="button button-secondary">ガイドを見る</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <p class="mini-label">Trip Window</p>
+        <strong>April 2 - April 6</strong>
+        <p class="hero-card-copy">
+          Arrival in Mactan, Cebu City sightseeing, Oslob + Kawasan adventure,
+          final shopping, and the overnight flight back to Narita.
+        </p>
+        <div class="hero-stats" id="hero-stats"></div>
+      </div>
+    </header>
+
+    <nav class="top-nav">
+      <a href="#overview">Overview</a>
+      <a href="#flights">Flights</a>
+      <a href="#visuals">Visuals</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#media">Media</a>
+      <a href="#spots">Highlights</a>
+      <a href="#guide">Guide</a>
+    </nav>
+
+    <main>
+      <section id="overview" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">At A Glance</p>
+          <h2>旅の全体像</h2>
+          <p>
+            セブシティを起点に、街歩きと大自然アクティビティをバランスよく詰め込んだ4日間。
+          </p>
+        </div>
+
+        <div class="overview-grid" id="overview-grid"></div>
+      </section>
+
+      <section id="flights" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Flight Details</p>
+          <h2>航空券情報</h2>
+          <p>予約番号、便名、ターミナル、運賃をまとめて確認できるフライトセクション。</p>
+        </div>
+
+        <div class="flight-summary" id="flight-summary"></div>
+        <div class="flight-grid" id="flight-grid"></div>
+      </section>
+
+      <section id="visuals" class="panel visual-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Visual Mood</p>
+          <h2>先に雰囲気をつかむ</h2>
+          <p>文字を読む前に、今回の旅っぽさが一瞬で伝わるビジュアルカード。</p>
+        </div>
+
+        <div class="visual-strip" id="visual-strip"></div>
+      </section>
+
+      <section id="itinerary" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Day By Day</p>
+          <h2>Itinerary</h2>
+          <p>
+            時間帯・費用・予約状況が一目でわかるように整理した、今回のメインスケジュール。
+          </p>
+        </div>
+
+        <div class="day-grid" id="day-grid"></div>
+      </section>
+
+      <section id="media" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Watch & Read</p>
+          <h2>動画と参考ガイド</h2>
+          <p>事前に雰囲気を掴みたいとき用のYouTubeとブログ。スマホで流し見しやすいようにまとめました。</p>
+        </div>
+
+        <div class="media-section">
+          <div class="media-headline">
+            <h3>YouTube</h3>
+            <p>空港、オスロブ、カワサンの空気感を掴むための参考動画。</p>
+          </div>
+          <div class="video-reel" id="video-reel"></div>
+        </div>
+
+        <div class="media-section">
+          <div class="media-headline">
+            <h3>Blog & Guide</h3>
+            <p>現地の雰囲気や最新の動線をざっくり掴むための読み物。</p>
+          </div>
+          <div class="blog-grid" id="blog-grid"></div>
+        </div>
+      </section>
+
+      <section id="spots" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Highlights</p>
+          <h2>行きたい場所</h2>
+          <p>街の定番スポットと、この旅のハイライトを先にイメージできるようにまとめました。</p>
+        </div>
+
+        <div class="spot-grid" id="spot-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Quick Access</p>
+          <h2>地図ショートカット</h2>
+          <p>空港、観光地、モールなど、すぐ開きたい場所をひとまとめにしています。</p>
+        </div>
+
+        <div class="map-grid" id="map-grid"></div>
+      </section>
+
+      <section id="guide" class="panel guide-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Travel Guide</p>
+          <h2>メモ & Tips</h2>
+        </div>
+
+        <div class="guide-grid">
+          <article class="guide-card">
+            <h3>予約まわり</h3>
+            <ul class="plain-list" id="booking-list"></ul>
+          </article>
+
+          <article class="guide-card">
+            <h3>持ち物メモ</h3>
+            <ul class="plain-list" id="packing-list"></ul>
+          </article>
+
+          <article class="guide-card">
+            <h3>あると便利</h3>
+            <ul class="plain-list" id="utility-list"></ul>
+          </article>
+
+          <article class="guide-card">
+            <h3>4/4専用チェック</h3>
+            <ul class="plain-list" id="adventure-list"></ul>
+          </article>
+
+          <article class="guide-card">
+            <h3>移動 & お金</h3>
+            <ul class="plain-list" id="money-list"></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Static travel booklet for Cebu planning.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
